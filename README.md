@@ -33,8 +33,8 @@ restart() {
   start
 }
 
-#Our script will have a parameter which will compare with the functionalities of start, stop and restart, if that message options are of a different send.
-#Nuestro script tendra un parametro el cual compararemos con las funcionalidades de start, stop y restart, en caso que se de una distinta mandaremos mensaje de las opciones.
+* Our script will have a parameter which will compare with the functionalities of start, stop and restart, if that message options are of a different send.
+* Nuestro script tendra un parametro el cual compararemos con las funcionalidades de start, stop y restart, en caso que se de una distinta mandaremos mensaje de las opciones.
 case "$1" in
 start)
   start
@@ -54,19 +54,19 @@ esac
 exit 0
 ```
 
-#We give execute permissions to our script/Daremos permisos de ejecucion a nuestro script
+* We give execute permissions to our script/Daremos permisos de ejecucion a nuestro script
 ```sh
 $ sudo chmod ug+x /etc/init.d/myscript
 ```
 
-#Now we can run our script made service/Ahora podemos ejecutar nuestro script hecho servicio
+* Now we can run our script made service/Ahora podemos ejecutar nuestro script hecho servicio
 ```sh
 $ sudo service myscript start
 $ sudo service myscript stop
 $ sudo service myscript restart
 ```
 
-#We can add functionality to our service to start when you start the operating system/Podemos agregar funcionalidad a nuestro servicio para que inicie cuando inicia el sistema operativo
+* We can add functionality to our service to start when you start the operating system/Podemos agregar funcionalidad a nuestro servicio para que inicie cuando inicia el sistema operativo
 ```sh
 $ sudo update-rc.d myscript defaults
 ```
